@@ -9,9 +9,12 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  // // The strictMode app will not allow the modal to be rendered. I don't know why
+  // <React.StrictMode>
+  //   <App />
+  // </React.StrictMode>
+
+  <App />
 );
 
 // If you want to start measuring performance in your app, pass a function
