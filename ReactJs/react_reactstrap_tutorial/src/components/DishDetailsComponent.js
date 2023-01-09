@@ -1,7 +1,7 @@
 import React from "react";
 import {
     Card, CardImg, CardText, CardBody,
-    CardTitle, Breadcrumb, BreadcrumbItem
+    CardTitle, Breadcrumb, BreadcrumbItem, Button
 } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
@@ -30,7 +30,6 @@ function RenderComments({ comments }) {
         )
     })
     return commentElements;
-
 }
 
 function DishDetails(props) {
@@ -54,6 +53,9 @@ function DishDetails(props) {
                     </div>
                     <div className="col-12 col-md-5 m-1">
                         <RenderComments comments={props.comments} />
+                        <div className="row">
+                            <Button outline><span className="fa fa-pencil fa-lg"></span> Submit comment</Button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -63,8 +65,6 @@ function DishDetails(props) {
             <div></div>
         );
     }
-
-
 }
 
 export default DishDetails;
